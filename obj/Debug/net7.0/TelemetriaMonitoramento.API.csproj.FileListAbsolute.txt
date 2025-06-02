@@ -1,0 +1,7 @@
+C:\Users\edson\Desktop\TelemetriaMonitoramento\TelemetriaMonitoramento.API\obj\Debug\net7.0\TelemetriaMonitoramento.API.csproj.AssemblyReference.cache
+C:\Users\edson\Desktop\TelemetriaMonitoramento\TelemetriaMonitoramento.API\obj\Debug\net7.0\TelemetriaMonitoramento.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edson\Desktop\TelemetriaMonitoramento\TelemetriaMonitoramento.API\obj\Debug\net7.0\TelemetriaMonitoramento.API.AssemblyInfoInputs.cache
+C:\Users\edson\Desktop\TelemetriaMonitoramento\TelemetriaMonitoramento.API\obj\Debug\net7.0\TelemetriaMonitoramento.API.AssemblyInfo.cs
+C:\Users\edson\Desktop\TelemetriaMonitoramento\TelemetriaMonitoramento.API\obj\Debug\net7.0\TelemetriaMonitoramento.API.csproj.CoreCompileInputs.cache
+C:\Users\edson\Desktop\TelemetriaMonitoramento\TelemetriaMonitoramento.API\obj\Debug\net7.0\TelemetriaMonitoramento.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\edson\Desktop\TelemetriaMonitoramento\TelemetriaMonitoramento.API\obj\Debug\net7.0\TelemetriaMonitoramento.API.MvcApplicationPartsAssemblyInfo.cache
