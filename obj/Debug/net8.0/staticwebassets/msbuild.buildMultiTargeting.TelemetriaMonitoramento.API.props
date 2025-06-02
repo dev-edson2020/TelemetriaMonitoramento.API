@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TelemetriaMonitoramento.API.props" />
+</Project>

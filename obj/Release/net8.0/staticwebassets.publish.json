@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0xFqAGs6PmLTMD4P4OEy5OnBsa1flrrBrNlgUikm1Ls=",
+  "Source": "TelemetriaMonitoramento.API",
+  "BasePath": "_content/TelemetriaMonitoramento.API",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

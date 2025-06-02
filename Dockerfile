@@ -1,26 +1,22 @@
-# Etapa de build
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+# Etapa 1: Build da aplicação
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-# Copia todos os arquivos do projeto para dentro do container
-COPY . .
-
-# Restaura as dependências do projeto
+# Copiar csproj e restaurar dependências
+COPY *.csproj ./
 RUN dotnet restore
 
-# Compila e publica a aplicação em modo Release para a pasta /out
-RUN dotnet publish -c Release -o out
+# Copiar todo código e publicar
+COPY . ./
+RUN dotnet publish TelemetriaMonitoramento.API.csproj -c Release -o out
 
-# Etapa de runtime
-FROM mcr.microsoft.com/dotnet/aspnet:7.0
+# Etapa 2: Imagem final runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-
-# Copia os arquivos compilados da etapa de build para o runtime
 COPY --from=build /app/out .
 
-# Define a URL para escutar conexões HTTP na porta 5000
-ENV ASPNETCORE_URLS=http://+:5000
+# Expor porta padrão da sua aplicação (ajuste se for outra)
 EXPOSE 5000
 
-# Comando para iniciar a aplicação
-ENTRYPOINT ["dotnet", "TelemetriaMonitoramento.API.dll"]
+# Comando para rodar a aplicação
+ENTRYPOINT ["TelemetriaMonitoramento.API.dll"]
