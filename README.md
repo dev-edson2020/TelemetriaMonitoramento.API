@@ -1,59 +1,68 @@
 # Plataforma de Monitoramento de Máquinas Pesadas - Telemetria
 
-Sistema básico para monitoramento em tempo real de máquinas pesadas com backend em .NET 8 e frontend em Angular. A aplicação simula dados de telemetria atualizados via WebSockets para exibir status e localização das máquinas.
+Sistema completo para monitoramento em tempo real de máquinas pesadas, com backend em .NET 8 e frontend em Angular. A aplicação simula dados de telemetria atualizados via WebSockets para exibir status e localização das máquinas.
 
 ---
 
-## Descrição do Projeto
+## 📋 Descrição do Projeto
 
-Este projeto visa desenvolver uma plataforma que permita o cadastro, monitoramento e visualização em tempo real do status e localização de máquinas pesadas. A comunicação em tempo real é feita através de WebSockets, permitindo que o frontend seja atualizado instantaneamente com as informações enviadas pelo backend.
+Esta plataforma permite o **cadastro, monitoramento e visualização em tempo real** do status e da localização de máquinas pesadas. Utiliza **WebSockets** para comunicação instantânea entre backend e frontend, garantindo atualizações dinâmicas e contínuas da telemetria.
 
 ---
 
-## Funcionalidades Implementadas
+## ✅ Funcionalidades Implementadas
 
-### Backend (.NET 8)
-
+### 🔧 Backend (.NET 8)
 - API RESTful para cadastro, listagem e filtro de máquinas.
-- Endpoints para atualizar localização e status das máquinas.
-- Envio do status atualizado em tempo real via WebSockets.
-- Simulação automática de dados de telemetria para máquinas específicas.
-- Containerização com Docker para facilitar o deploy e testes.
+- Endpoints para atualizar status e localização das máquinas.
+- WebSocket para envio em tempo real dos dados atualizados.
+- Simulador de telemetria automática para testes e demonstrações.
+- Containerização com Docker.
 
-### Frontend (Angular)
-
-- Dashboard com lista de máquinas e atualização do status em tempo real.
-- Formulário de cadastro de novas máquinas com validações básicas.
-- Página de detalhes que mostra as informações completas de cada máquina.
-- Consumo da API RESTful e integração com WebSockets para atualização dinâmica.
-- (Opcional) Possibilidade de integração futura com mapas para visualização geográfica.
-
----
-
-## Tecnologias Utilizadas
-
-- Backend: .NET 8.0, C#, Entity Framework Core, MySQL
-- Frontend: Angular, TypeScript, RxJS, WebSockets
-- Containerização: Docker, Docker Compose
-- Banco de Dados: MySQL (containerizado)
+### 🎨 Frontend (Angular)
+- Dashboard com lista de máquinas e status em tempo real.
+- Cadastro de novas máquinas com validação de campos.
+- Página de detalhes com informações completas de cada máquina.
+- Integração com API REST e WebSocket.
+- (Futuro) Suporte à visualização geográfica via mapas.
 
 ---
 
-## Pré-requisitos
+## 🚀 Tecnologias Utilizadas
 
-Para rodar a aplicação, você precisa ter instalado:
+- **Backend:** .NET 8, C#, Entity Framework Core
+- **Frontend:** Angular, TypeScript, RxJS, WebSockets
+- **Banco de Dados:** MySQL (containerizado)
+- **DevOps:** Docker, Docker Compose
+
+---
+
+## 🔧 Pré-requisitos
+
+Para executar o projeto, você precisará de:
 
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
-- (Opcional para frontend local) [Node.js](https://nodejs.org/) e [Angular CLI](https://angular.io/cli)
+- (Opcional para desenvolvimento frontend local) [Node.js](https://nodejs.org/) e [Angular CLI](https://angular.io/cli)
 
 ---
 
-## Como Rodar o Projeto
+## 🐳 Como Rodar o Projeto com Docker (Recomendado)
 
-### Usando Docker Compose (recomendado)
+1. Clone este repositório:
 
-1. Clone o repositório:
    ```bash
-   git clone https://seu-repositorio.git
+   git clone https://github.com/seu-usuario/seu-repositorio.git
    cd seu-repositorio
+
+Inicie os containers com Docker Compose:
+
+docker-compose up --build
+
+Acesse a aplicação:
+
+Frontend Angular: http://localhost:4200
+
+Backend API (.NET): http://localhost:5000/swagger
+
+MySQL: Rodando internamente no container, porta padrão 3306
