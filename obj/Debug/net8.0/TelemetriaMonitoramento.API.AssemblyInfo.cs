@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TelemetriaMonitoramento.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df7b74b1ad86a5d31f29d5f7b59f67e84d02203d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f7013a98019ffb8a5ca6f0f90c1e61edc40afa1")]
 [assembly: System.Reflection.AssemblyProductAttribute("TelemetriaMonitoramento.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TelemetriaMonitoramento.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
